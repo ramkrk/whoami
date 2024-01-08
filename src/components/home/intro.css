@@ -1,0 +1,13 @@
+.home-background {
+    background-image: url('./img/rameshk.jpg')
+}
+
+.home-content {
+    z-index: 1;
+    position: absolute;
+    top: 20rem;
+}
+
+.home-section-title {
+    color: rgb(27, 27, 27);
+}

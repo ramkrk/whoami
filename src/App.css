@@ -1,0 +1,156 @@
+
+.App {
+  text-align: center;
+  font-family: Montserrat;
+}
+
+.navbar-brand, .nav-link, h1, h2, h3, h4, h5, h6, .nav-link:visited, .navbar-brand:hover {
+  color: #fffff9;
+}
+
+.nav-link:hover {
+  color: #61dafb;
+}
+
+.navbar-nav .nav-link.active {
+  color: #fffff9;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-background {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  background-position: center;
+  background-size: cover;
+}
+
+.app-background::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  background-color: rgba(0,0,0,.4);
+}
+
+.app-first-color {
+  color: #812323;
+}
+
+.offcanvas {
+  background-color: #282c34;
+}
+
+.offcanvas.offcanvas-end {
+  border: none;
+}
+
+.navbar-toggler {
+  background-color: #ffff;
+}
+
+.app-second-color, .box-title:hover{
+  color: #f93534;
+}
+
+.app-section-title {
+  font-size: 9.16667rem;
+  font-weight: 600;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 7.91667rem;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  text-transform: lowercase;
+  opacity: .15;
+  color: #fff;
+}
+
+.app-section-title span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  -webkit-transition: all .5s .6s ease-out;
+  transition: all .5s .6s ease-out;
+  -webkit-transform: translate(-50%,-50%) rotate(-90deg);
+  -ms-transform: translate(-50%,-50%) rotate(-90deg);
+  transform: translate(-50%,-50%) rotate(-90deg);
+  white-space: nowrap;
+  letter-spacing: 2.5rem;
+  opacity: 0;
+}
+
+.custom-section.active .app-section-title span {
+  letter-spacing: 0;
+  opacity: 1;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.highlighted-content {
+  position: relative;
+}
+
+
+.highlighted-content-title::before {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 100vw;
+  content: '';
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transition: transform 1s ease-out,-webkit-transform 1s ease-out;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  border-top: 2px solid #fff;
+}

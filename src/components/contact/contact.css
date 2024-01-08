@@ -1,0 +1,226 @@
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+  
+  .contact-background {
+    background-image: url('./img/contactBg.jpg');
+  }
+
+  .contact-address {
+    color: #999;
+  }
+
+  .contact-content {
+    z-index: 1;
+    position: relative;
+  }
+
+  .contact-box-content {
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    letter-spacing: 0.35px;
+  }
+
+  .contact-box-content:hover {
+    color: #fff;
+  }
+
+  .contact-content .address svg {
+    color: #812323;
+  }
+
+  .contact-content .send-msg-btn {
+    background-color: #812323;
+    border: #812323;
+  }
+  
+  .contact-content .address h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #050d18;
+  }
+  
+  .contact-content .address p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #173b6c;
+  }
+  
+  .contact-content .address .email {
+    text-wrap: nowrap;
+  }
+  
+  .contact-content .address .social-links {
+    padding-left: 60px;
+  }
+  
+  .contact-content .address .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    margin-right: 10px;
+  }
+  
+  .contact-content .address .social-links a:hover {
+    background: #149ddd;
+    color: #fff;
+  }
+  
+  .contact-content .address .email:hover svg,
+  .contact-content .address .address:hover svg,
+  .contact-content .address .phone:hover svg {
+    color: #f93534;
+  }
+  
+  .contact-content .php-email-form {
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .contact-content .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+  .contact-content .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  
+  .contact-content .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact-content .php-email-form .error-message br+br {
+    margin-top: 25px;
+  }
+  
+  .contact-content .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact-content .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact-content .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact-content .php-email-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-content .php-email-form label {
+    padding-bottom: 8px;
+  }
+  
+  .contact-content .php-email-form input,
+  .contact-content .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  .contact-content .php-email-form input {
+    height: 44px;
+  }
+  
+  .contact-content .php-email-form textarea {
+    padding: 10px 15px;
+  }
+  
+  .contact-content .php-email-form button[type=submit] {
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .contact-content .php-email-form button[type=submit]:hover {
+    background: #37b3ed;
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .contact-content input, .contact-content textarea, .contact-content input:focus, .contact-content textarea:focus  {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    color: #fff;
+    border: none;
+    outline: 0;
+    background-color: #2f2f2f;
+    -webkit-box-shadow: 0 0 2.08333rem rgba(0,0,0,.5);
+    box-shadow: 0 0 2.08333rem rgba(0,0,0,.5);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.9428;
+    text-transform: none;
+  }
+
+  .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+}

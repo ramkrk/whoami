@@ -1,0 +1,89 @@
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+  .resume-background {
+    background-image: url('./img/resumeBg.png');
+  }
+
+  .resume-content {
+    z-index: 1;
+    position: relative;
+    color: rgb(136, 136, 136);
+  }
+
+  .resume-box-content {
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 0.35px;
+  }
+
+  .resume-box-content:hover {
+    color: #fff;
+  }
+
+.resume-content .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .resume-content .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
+  
+  .resume-content .resume-item h4 {
+    line-height: 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #f93534;
+    margin-bottom: 10px;
+  }
+
+  .resume-content .resume-item h4:hover {
+    color: #fff;
+  }
+  
+  .resume-content .resume-item h5 {
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume-content .resume-item ul {
+    padding-left: 10px;
+  }
+  
+  .resume-content .resume-item ul li {
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+  }
+
+  .resume-content .resume-item ul li:hover {
+    color: #fff;
+  }
+  
+  .resume-content .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume-content .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #f93534;
+    border: 2px solid #f93534;
+  }
